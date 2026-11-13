@@ -43,6 +43,7 @@ export function useSpeechSynthesis() {
       utterance.onstart = () => setIsSpeaking(true)
       utterance.onend = () => setIsSpeaking(false)
       utterance.onerror = () => setIsSpeaking(false)
+      setIsSpeaking(true)
       window.speechSynthesis.speak(utterance)
     } catch (speechError) {
       console.warn('Speech synthesis is unavailable:', speechError)

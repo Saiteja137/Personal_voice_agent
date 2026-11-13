@@ -24,6 +24,7 @@ export default function ProjectShowcase({ onAsk }) {
               <p className="project-kicker">{project.shortTitle}</p><h3>{project.title}</h3><p className="project-description">{project.description}</p>
               <div className="objective"><span>ENGINEERING OBJECTIVE</span><p>{project.objective}</p></div>
               {project.highlights?.length > 0 && <ul className="project-highlights">{project.highlights.slice(0, 3).map((highlight) => <li key={highlight}>{highlight}</li>)}</ul>}
+              {project.resumeReportedMetrics?.length > 0 && <div className="project-metrics"><span>RESUME-DOCUMENTED SCOPE</span><div>{project.resumeReportedMetrics.map((metric) => <b key={metric}>{metric}</b>)}</div></div>}
               <div className="tag-list">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
               <button className="project-action" onClick={() => onAsk(config.question)}>Ask about this project <ArrowUpRight size={17} /></button>
             </motion.article>

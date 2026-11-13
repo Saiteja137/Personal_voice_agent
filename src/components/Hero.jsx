@@ -7,7 +7,7 @@ export default function Hero({ onStart }) {
   return (
     <section className="hero container" id="top">
       <motion.div className="hero-copy" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .65 }}>
-        <div className="eyebrow"><span className="status-dot" /> Personal intelligence, thoughtfully engineered</div>
+        <div className="eyebrow"><span className="status-dot" /> Sai Teja's interactive AI portfolio</div>
         <h1>Meet Sai Teja <span className="gradient-text">AI</span></h1>
         <p className="hero-kicker">The Voice Behind the Engineer</p>
         <p className="hero-description">{personalData.summary}</p>

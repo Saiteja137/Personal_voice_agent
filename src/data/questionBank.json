@@ -71,7 +71,7 @@
       "background",
       "who are you"
     ],
-    "answer": "I am Sai Teja Atkapuram, a Computer Science Engineering graduate and AI Engineer with around a year of enterprise AI experience at UBS Technology Services through Hays. My work has involved agentic workflows, RAG, API integrations, evaluation, and deployment using Python, LangGraph, FastAPI, and Azure. I have also explored AI-assisted CI/CD analysis and multi-agent financial planning. I enjoy turning complex requirements into practical solutions, and I want to grow in AI, Generative AI, and Agentic AI engineering.",
+    "answer": "I am Sai Teja Atkapuram, a Computer Science Engineering graduate and AI Engineer with one year of professional experience building enterprise-grade AI applications. At UBS Technology Services through Hays, I worked across agentic workflows, RAG, API integrations, evaluation, observability, CI/CD, and deployment using Python, LangGraph, FastAPI, Azure, Docker, and AKS. My projects include enterprise request automation, AI-assisted CI/CD root-cause analysis, and multi-agent financial planning. I enjoy turning complex requirements into reliable, usable systems, and I want to deepen my career in Generative AI and Agentic AI engineering.",
     "requiresConfirmation": false
   },
   {
@@ -118,7 +118,9 @@
     "variations": [
       "What is your superpower?",
       "What special ability do you bring?",
-      "What are you exceptionally good at?"
+      "What are you exceptionally good at?",
+      "What is your strongest natural ability?",
+      "Which quality is your superpower?"
     ],
     "keywords": [
       "superpower",
@@ -135,7 +137,9 @@
     "variations": [
       "What are your strengths?",
       "What is your greatest strength?",
-      "What are you good at?"
+      "What are you good at?",
+      "Which qualities help you succeed?",
+      "What strengths would you bring to this role?"
     ],
     "keywords": [
       "strength",
@@ -143,7 +147,7 @@
       "good at",
       "ability"
     ],
-    "answer": "My biggest strength is structured problem-solving. I approach complex tasks by understanding the requirements, breaking down the problem, and identifying practical solutions. Combined with my willingness to learn new technologies, this helps me navigate challenging technical work.",
+    "answer": "My strongest qualities are structured problem-solving, adaptability, and continuous learning. I enjoy breaking complex technical challenges into manageable steps and finding practical solutions. I also learn effectively through implementation, which helps me understand how different technologies work together. These strengths are especially valuable when building AI systems with multiple components and integrations.",
     "requiresConfirmation": false
   },
   {
@@ -153,7 +157,9 @@
     "variations": [
       "What are your growth areas?",
       "Where do you want to improve?",
-      "Which skills are you developing?"
+      "Which skills are you developing?",
+      "What are your top three growth priorities?",
+      "Which areas do you want to strengthen?"
     ],
     "keywords": [
       "growth areas",
@@ -161,8 +167,8 @@
       "developing",
       "grow in"
     ],
-    "answer": "The three areas I want to grow in are advanced agentic AI engineering, production-grade AI system design and evaluation, and communicating technical decisions with greater impact. My long-term goal is to become an AI Engineer who can take intelligent systems from early prototypes to dependable, scalable applications. I see these areas as complementary: strong architecture, measurable reliability, and clear communication are all essential to delivering real value.",
-    "requiresConfirmation": true
+    "answer": "The three areas I want to focus on are advanced Agentic AI engineering, scalable AI system architecture, and production-grade AI reliability. I want to become stronger at designing multi-agent workflows, building systems that can operate at enterprise scale, and evaluating AI applications for accuracy, security, and dependable performance. These areas support my long-term goal of becoming a highly capable AI Engineer.",
+    "requiresConfirmation": false
   },
   {
     "id": "biggest_weakness",
@@ -171,14 +177,16 @@
     "variations": [
       "What weakness are you working on?",
       "What is an area for improvement?",
-      "What do you struggle with?"
+      "What do you struggle with?",
+      "Which skill are you trying to improve?",
+      "Tell me about a professional weakness"
     ],
     "keywords": [
       "weakness",
       "struggle",
       "area for improvement"
     ],
-    "answer": "An area I am working to improve is making technical explanations concise for different audiences. I naturally enjoy going deep into implementation details, but I recognize that stakeholders first need to understand the problem, the decision, and the impact. I am practicing leading with the main point and adding detail only where it helps. [Confirm this accurately describes you before publishing.]",
+    "answer": "One area I'm actively improving is communicating technical concepts more concisely. I can sometimes go deeper into implementation details than necessary. I'm learning to explain the business problem and outcome first, then provide technical depth based on the audience. This helps me communicate more effectively with technical and nontechnical stakeholders. This answer requires my personal confirmation.",
     "requiresConfirmation": true
   },
   {
@@ -188,7 +196,9 @@
     "variations": [
       "How do coworkers misunderstand you?",
       "What do colleagues get wrong about you?",
-      "Is there a common misconception about you?"
+      "Is there a common misconception about you?",
+      "What might coworkers misunderstand about you?",
+      "Can you seem quiet when analyzing a problem?"
     ],
     "keywords": [
       "misconception",
@@ -196,7 +206,7 @@
       "colleagues",
       "misunderstand"
     ],
-    "answer": "Because I prefer to understand a problem before jumping to conclusions, I may sometimes come across as reserved at first. But once I have clarity, I actively share ideas, ask questions, and collaborate to move toward a solution. I see thoughtful listening as a strength, and I am intentional about making my contributions visible. [Personal confirmation needed: this is a proposed self-description, not a verified coworker opinion.]",
+    "answer": "One possible misconception is that I can appear quiet or reserved when I'm first analyzing a problem. In reality, I prefer to understand the situation before contributing so my suggestions are thoughtful and useful. Once I have clarity, I enjoy discussing ideas and collaborating toward a solution. This is a proposed answer and still requires my confirmation.",
     "requiresConfirmation": true
   },
   {
@@ -206,7 +216,9 @@
     "variations": [
       "How do you leave your comfort zone?",
       "How do you challenge yourself?",
-      "How do you stretch your abilities?"
+      "How do you stretch your abilities?",
+      "How do you push your limits?",
+      "How do you grow beyond familiar technologies?"
     ],
     "keywords": [
       "boundaries",
@@ -224,7 +236,9 @@
     "variations": [
       "Why are you a good fit?",
       "What would you bring to this role?",
-      "Why should we choose you?"
+      "Why should we choose you?",
+      "What value would you add to our team?",
+      "Why are you the right person for this position?"
     ],
     "keywords": [
       "hire",
@@ -232,7 +246,7 @@
       "choose you",
       "bring to role"
     ],
-    "answer": "You should consider me because I bring a combination of practical AI development skills, structured problem-solving, and a strong willingness to learn. I focus not only on understanding AI concepts but also on connecting technologies to build useful applications. I am comfortable approaching unfamiliar challenges, learning what is required, and working toward a dependable solution.",
+    "answer": "I believe I would be a strong fit because I bring hands-on AI engineering experience, structured problem-solving, and a genuine willingness to learn. I've used LangGraph, RAG, FastAPI, and Azure to develop practical AI applications. Beyond technical skills, I value accountability, collaboration, and reliable delivery. I'm confident I can contribute to the team while continuing to grow with the organization.",
     "requiresConfirmation": false
   },
   {
@@ -242,7 +256,9 @@
     "variations": [
       "What differentiates you?",
       "What is unique about your profile?",
-      "Why do you stand out?"
+      "Why do you stand out?",
+      "Why should we hire you over other candidates?",
+      "What do you offer that others may not?"
     ],
     "keywords": [
       "different",
@@ -250,7 +266,7 @@
       "unique",
       "stand out"
     ],
-    "answer": "What differentiates me is my approach to learning and implementation. I enjoy exploring how technologies work together, especially in AI-powered applications. Instead of focusing only on individual tools, I try to understand the complete workflow—from identifying the problem and designing the solution to integrating systems and evaluating the result.",
+    "answer": "I wouldn't assume I am better than every other candidate, but I can explain what I bring. I have practical experience connecting AI models, agents, APIs, and enterprise systems to build useful applications. I approach problems systematically, adapt to new technologies, and take engineering quality seriously. I believe that combination of implementation experience, curiosity, and commitment would let me contribute meaningfully.",
     "requiresConfirmation": false
   },
   {
@@ -260,7 +276,9 @@
     "variations": [
       "What drives you?",
       "What keeps you motivated?",
-      "Why do you enjoy this work?"
+      "Why do you enjoy this work?",
+      "What motivates you professionally?",
+      "What keeps you engaged in your career?"
     ],
     "keywords": [
       "motivate",
@@ -268,7 +286,33 @@
       "enjoy work",
       "keeps you"
     ],
-    "answer": "I am motivated by the opportunity to solve meaningful problems and continuously improve my technical skills. What excites me most about AI is seeing how an idea can become a working application that makes a process simpler or more useful. That connection between learning and real-world value keeps me motivated.",
+    "answer": "I'm motivated by solving challenging problems, learning new technologies, and seeing my work become something useful. I especially enjoy situations where I need to understand unfamiliar concepts and apply them to a practical engineering problem. That combination of learning, implementation, and real-world impact keeps me engaged.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "career_background",
+    "category": "career",
+    "question": "Tell me about Sai Teja's career.",
+    "variations": [
+      "I want to know about Sai Teja's career.",
+      "Can you explain his professional journey?",
+      "What is Sai Teja's professional background?",
+      "Tell me about your career.",
+      "What is your career journey?",
+      "What does Sai Teja do professionally?",
+      "What kind of work has Sai Teja done?",
+      "Tell me about your professional journey."
+    ],
+    "keywords": [
+      "career",
+      "career journey",
+      "professional journey",
+      "professional background",
+      "work history",
+      "do professionally",
+      "kind of work"
+    ],
+    "answer": "I am an AI Engineer with a Computer Science Engineering background and one year of professional experience developing enterprise AI applications. My work covers Generative AI, Agentic AI, RAG, Python, LangGraph, FastAPI, Azure, evaluation, observability, and production deployment on AKS. I have contributed to enterprise request automation, AI-powered CI/CD root-cause analysis, and multi-agent financial planning. My goal is to specialize further in Generative AI and Agentic AI engineering while building scalable, reliable, and measurable AI solutions.",
     "requiresConfirmation": false
   },
   {
@@ -278,7 +322,9 @@
     "variations": [
       "What do you want from your career?",
       "What is your professional goal?",
-      "What are your ambitions?"
+      "What are your ambitions?",
+      "What are your long-term career goals?",
+      "Where do you want your AI career to go?"
     ],
     "keywords": [
       "career goals",
@@ -296,7 +342,9 @@
     "variations": [
       "What is your five-year plan?",
       "Where will your career be in five years?",
-      "What is your long-term vision?"
+      "What is your long-term vision?",
+      "What do you want to achieve in five years?",
+      "Describe your future career direction"
     ],
     "keywords": [
       "five years",
@@ -304,7 +352,7 @@
       "future self",
       "five year plan"
     ],
-    "answer": "In five years, I aim to be a strong AI and Agentic AI Engineer who can own complex system designs and help bring reliable AI applications into production. I want to deepen my expertise in multi-agent orchestration, evaluation, system architecture, and responsible automation, while becoming a clear communicator and trusted collaborator.",
+    "answer": "In five years, I see myself as a technically strong AI Engineer specializing in Generative AI and Agentic AI systems. I want deeper expertise in system architecture, production deployment, and AI reliability while taking greater ownership of complex projects. My goal is to become someone the team can rely on to build intelligent solutions that are technically sound and valuable to the business.",
     "requiresConfirmation": false
   },
   {
@@ -368,7 +416,8 @@
       "What is your learning process?",
       "How do you pick up a new tool?",
       "How do you pick up unfamiliar tools?",
-      "How do you upskill?"
+      "How do you upskill?",
+      "How quickly can you learn an unfamiliar technology?"
     ],
     "keywords": [
       "learn",
@@ -418,7 +467,7 @@
       "request intelligence",
       "triaging"
     ],
-    "answer": "My Request Management Service project focused on enterprise request triage, enrichment, investigation, and resolution support across Atlas and ServiceNow. It combined LangChain and LangGraph workflows, knowledge retrieval from enterprise sources, and tool calling to assist with request handling. A key design principle was retaining human approval for sensitive actions, with observability and evaluation to make the workflows more trustworthy. The broader implementation also included a reusable skills framework and deployment components on Azure Kubernetes Service.",
+    "answer": "My Request Management Service automated end-to-end triage, enrichment, investigation, and resolution across Atlas and ServiceNow. I used Python, FastAPI, LangChain, and LangGraph to build four agentic workflows with grounded retrieval across Atlas Knowledge Base, Confluence, and Azure AI Search. The solution included a reusable Agent Skills Framework and Sandbox, Microsoft Teams human approvals, dry-run execution, DeepEval evaluation, OpenTelemetry monitoring, and Docker and Helm deployment on AKS. The resume records a scope of more than 200 daily requests, over 70 supported teams, and more than 200 skills across 100 use cases.",
     "requiresConfirmation": false
   },
   {
@@ -437,7 +486,7 @@
       "gitlab",
       "failure analysis"
     ],
-    "answer": "My AI-powered CI/CD Root Cause Analysis project uses a four-agent LangGraph workflow to inspect GitLab pipeline failures, classify errors, investigate likely causes, and recommend remediation. It combines Azure OpenAI with an asynchronous FastAPI backend and GitLab REST APIs, with a React and TypeScript dashboard for investigation timelines and results. What I value about the project is the focus on making noisy technical failures easier to understand and act on.",
+    "answer": "My AI-powered CI/CD Root Cause Analysis project uses a four-agent LangGraph workflow to extract GitLab pipeline errors, classify failures into six categories, trace likely root causes, recommend remediation, and correlate historical incidents. It combines Azure OpenAI GPT-4o with an asynchronous FastAPI backend, GitLab REST API v4, background processing, SQLAlchemy, and SQLite. A React 19 and TypeScript dashboard presents execution timelines, RCA summaries, manual log analysis, failure analytics, confidence scores, and incident tracking.",
     "requiresConfirmation": false
   },
   {
@@ -456,7 +505,7 @@
       "financial goals",
       "multi agent finance"
     ],
-    "answer": "My AI Personal Finance Planner is a multi-agent project built around financial data collection, investment planning, and goal-based recommendations. Using LangChain, LangGraph, GPT models, and a React interface, it explores how to translate a person’s goals, expenses, and risk preferences into structured planning suggestions. It is a demonstration of AI-assisted planning, not a replacement for licensed financial advice.",
+    "answer": "My AI Personal Finance Planner uses three specialized agents for financial data collection, investment planning, and goal-based planning. Built with Python, LangChain, LangGraph, GPT-4.1, RAG, React, and TypeScript, it considers income, family context, expenses, goals, and risk preferences. The interface presents structured options across lump-sum investments, stocks, fixed deposits, savings strategies, projected returns, and major goals. It is an educational planning demonstration, not a replacement for licensed financial advice.",
     "requiresConfirmation": false
   },
   {
@@ -687,7 +736,7 @@
       "oversight",
       "people in control"
     ],
-    "answer": "Human-in-the-loop design is valuable when an action is sensitive, ambiguous, high-impact, or difficult to reverse. The system can gather context and propose a next step, while a person retains authority over the final decision. That makes automation useful without pretending uncertainty has disappeared.",
+    "answer": "Human-in-the-loop design is valuable when an action is sensitive, ambiguous, high-impact, or difficult to reverse. In the Request Management Service, I used Microsoft Teams approvals before deterministic tool execution, along with dry-run support and auditable results. The agent can gather context and propose a next step, while a person retains authority over the final decision.",
     "requiresConfirmation": false
   },
   {
@@ -841,7 +890,9 @@
     "variations": [
       "How do you receive constructive criticism?",
       "Are you open to feedback?",
-      "What do you do with review comments?"
+      "What do you do with review comments?",
+      "How do you respond to criticism?",
+      "How do you apply feedback?"
     ],
     "keywords": [
       "feedback",
@@ -877,7 +928,9 @@
     "variations": [
       "What is your teamwork style?",
       "How do you work in a team?",
-      "How do you communicate with teammates?"
+      "How do you communicate with teammates?",
+      "How do you contribute to a team?",
+      "Describe your approach to teamwork"
     ],
     "keywords": [
       "collaborate",
@@ -895,7 +948,9 @@
     "variations": [
       "What kind of leader could you be?",
       "How do you lead without authority?",
-      "Describe your leadership style"
+      "Describe your leadership style",
+      "What does leadership mean to you?",
+      "Can someone lead without a title?"
     ],
     "keywords": [
       "leadership",
@@ -903,8 +958,8 @@
       "lead without authority",
       "leadership style"
     ],
-    "answer": "I don't want to claim unverified leadership experience. The potential I aim to develop is grounded in creating clarity, asking useful questions, taking responsibility for outcomes, sharing knowledge, and helping a team make sound technical decisions. Specific leadership examples would need my personal confirmation.",
-    "requiresConfirmation": true
+    "answer": "To me, leadership means creating clarity, taking responsibility, supporting others, and helping a team move toward a shared objective. It is not only about having a title; it also involves communicating effectively, making thoughtful decisions, sharing useful context, and being accountable for outcomes. I would not invent past leadership responsibilities that I have not verified.",
+    "requiresConfirmation": false
   },
   {
     "id": "time_management",
@@ -1021,7 +1076,9 @@
     "variations": [
       "What accomplishment are you proud of?",
       "Tell me about your best result",
-      "What have you achieved?"
+      "What have you achieved?",
+      "Which professional achievement matters most to you?",
+      "What is an accomplishment you value?"
     ],
     "keywords": [
       "achievement",
@@ -1029,8 +1086,8 @@
       "proud",
       "best result"
     ],
-    "answer": "One achievement I am proud of is contributing to enterprise AI engineering work that connects agentic workflows with real operational systems. My resume describes work on a request-management solution using RAG, tool calling, human approvals, and production-oriented monitoring. I am especially proud of learning how to think about the full engineering lifecycle rather than just the model response. [Confirm your individual contribution and the release metrics before claiming them.]",
-    "requiresConfirmation": true
+    "answer": "One accomplishment I'm proud of is contributing to enterprise AI automation that combined agentic workflows, knowledge retrieval, API integrations, and human approvals. My work also included evaluation, observability, AKS deployment, and more than 20 production releases. I value this achievement because it taught me to design reliable systems around model capabilities rather than treating the model as the entire solution.",
+    "requiresConfirmation": false
   },
   {
     "id": "pressure",
@@ -1039,7 +1096,9 @@
     "variations": [
       "How do you handle tight deadlines?",
       "Describe working in a stressful situation",
-      "How do you remain calm under pressure?"
+      "How do you remain calm under pressure?",
+      "How do you handle pressure and deadlines?",
+      "How do you deliver under time constraints?"
     ],
     "keywords": [
       "pressure",
@@ -1047,8 +1106,8 @@
       "stressful",
       "remain calm"
     ],
-    "answer": "My general approach is to make the situation concrete: clarify the must-have outcome, reduce the work to critical steps, surface risks, and communicate progress. A claim about a specific high-pressure incident would require a real example and my confirmation.",
-    "requiresConfirmation": true
+    "answer": "I handle pressure by focusing on priorities and maintaining a structured approach. I identify the most important deliverables, break the work into manageable tasks, and address blockers early. I also communicate progress and risks clearly, because meeting a deadline is not just about working faster; it is about making sound decisions with the available time.",
+    "requiresConfirmation": false
   },
   {
     "id": "requirements",
@@ -1101,7 +1160,7 @@
       "sensitive data",
       "ai risks"
     ],
-    "answer": "I treat models, retrieved content, user input, and tools as separate trust boundaries. Important controls include least-privilege access, secret management, input and output validation, protection against prompt injection, careful logging, and explicit authorization before a tool performs an action.",
+    "answer": "I treat models, retrieved content, user input, and tools as separate trust boundaries. My experience includes authentication and authorization, JWT, mTLS, Azure Key Vault, access control, validated API schemas, human approvals, and auditable tool execution. I also consider prompt injection, sensitive logging, and least-privilege permissions when integrating agents with enterprise systems.",
     "requiresConfirmation": false
   },
   {
@@ -1301,6 +1360,43 @@
     "requiresConfirmation": false
   },
   {
+    "id": "deployment_experience",
+    "category": "engineering",
+    "question": "How have you deployed AI systems to production?",
+    "variations": [
+      "Tell me about your AI deployment experience",
+      "How have you used AKS?",
+      "How do you deploy an agentic AI application?"
+    ],
+    "keywords": [
+      "deployment experience",
+      "deploy ai",
+      "aks deployment",
+      "docker helm",
+      "production deployment"
+    ],
+    "answer": "I have deployed AI services using Docker, Helm, and Azure Kubernetes Service, supported by CI/CD and release validation. The surrounding architecture included FastAPI services, PostgreSQL, Azure Blob Storage, Azure Key Vault, automated evaluation, OpenTelemetry, and Azure Monitor. I managed more than 20 production releases, which strengthened my focus on repeatability, observability, rollback awareness, and post-release validation.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "skills_framework",
+    "category": "projects",
+    "question": "What is the Agent Skills Framework and Sandbox?",
+    "variations": [
+      "Explain your reusable AI skills framework",
+      "How did you generate executable agent skills?",
+      "What is your Skills Sandbox?"
+    ],
+    "keywords": [
+      "agent skills framework",
+      "skills sandbox",
+      "executable skills",
+      "reusable ai skills"
+    ],
+    "answer": "I built a reusable Agent Skills Framework and Sandbox that could generate, evaluate, and export executable AI skills from knowledge articles and PDFs. The objective was to support new automation use cases without requiring application code changes each time. My resume records more than 200 skills across 100 use cases, with evaluation built into the workflow before skills were used more broadly.",
+    "requiresConfirmation": false
+  },
+  {
     "id": "production_readiness",
     "category": "engineering",
     "question": "What makes an AI system production-ready?",
@@ -1315,7 +1411,7 @@
       "production grade",
       "beyond demo"
     ],
-    "answer": "A production-ready system needs more than a successful demo: defined quality thresholds, security, testing, observability, cost controls, fallbacks, versioning, data governance, deployment discipline, and clear operational ownership. I want to keep deepening these skills as part of my growth.",
+    "answer": "A production-ready AI system needs more than a successful demo: defined quality thresholds, security, testing, observability, fallbacks, versioning, data governance, deployment discipline, and clear operational ownership. In my work, that translated into DeepEval checks, OpenTelemetry and Azure Monitor, human approvals, Docker and Helm packaging, AKS deployment, CI/CD, and careful release validation across more than 20 production releases.",
     "requiresConfirmation": false
   },
   {
@@ -1396,7 +1492,9 @@
     "variations": [
       "What kind of team do you prefer?",
       "Describe your ideal work culture",
-      "Where do you do your best work?"
+      "Where do you do your best work?",
+      "What kind of work environment do you prefer?",
+      "Which workplace culture suits you?"
     ],
     "keywords": [
       "work environment",
@@ -1404,8 +1502,8 @@
       "work culture",
       "best work"
     ],
-    "answer": "A possible preference, subject to my confirmation, is an environment with meaningful problems, clear expectations, constructive feedback, room to learn, and strong engineering standards. I value teams where people can ask questions and discuss tradeoffs openly.",
-    "requiresConfirmation": true
+    "answer": "I work best in an environment that values collaboration, continuous learning, and engineering quality. I appreciate teams where people can discuss ideas openly, take responsibility for their work, and focus on meaningful problems. I also value a healthy balance between independent problem-solving and teamwork.",
+    "requiresConfirmation": false
   },
   {
     "id": "role_interest",
@@ -1432,7 +1530,9 @@
     "variations": [
       "Why do you want an AI career?",
       "What drew you to artificial intelligence?",
-      "Why are you an AI engineer?"
+      "Why are you an AI engineer?",
+      "What interests you about AI engineering?",
+      "Why did you pursue this field?"
     ],
     "keywords": [
       "choose ai",
@@ -1440,7 +1540,7 @@
       "drew to ai",
       "why ai engineer"
     ],
-    "answer": "AI engineering combines several things I enjoy: understanding complex systems, connecting technologies, and turning ideas into useful applications. I am especially drawn to the challenge of making intelligent behavior reliable and valuable in real workflows.",
+    "answer": "What attracts me to AI engineering is the opportunity to turn intelligent capabilities into practical applications. I enjoy the complete engineering process, from understanding the problem to integrating models, retrieval systems, APIs, and workflows. It is exciting because it combines continuous learning with the ability to create useful, reliable solutions.",
     "requiresConfirmation": false
   },
   {
@@ -1528,8 +1628,8 @@
       "metrics",
       "improve performance"
     ],
-    "answer": "No verified performance metrics or production impact figures were supplied, so I won't invent them. I can explain each project's engineering objective and functionality, and measurable results should be added only when I can confirm the evidence.",
-    "requiresConfirmation": true
+    "answer": "My resume documents concrete delivery scope across the enterprise Request Management Service: more than 200 daily requests, four agentic workflows, over 70 supported teams, and more than 200 executable skills across 100 use cases. It also records more than 20 production releases. I present these as the measured scope documented in my resume, while focusing on the engineering work behind them: orchestration, retrieval, approvals, evaluation, observability, and reliable deployment.",
+    "requiresConfirmation": false
   },
   {
     "id": "favorite_project",
@@ -1610,7 +1710,9 @@
     "variations": [
       "What compensation do you expect?",
       "What is your expected package?",
-      "What pay are you looking for?"
+      "What pay are you looking for?",
+      "Which salary range do you expect?",
+      "What are your compensation expectations?"
     ],
     "keywords": [
       "salary",
@@ -1618,8 +1720,8 @@
       "package",
       "pay"
     ],
-    "answer": "Compensation expectations are personal and context-dependent, and no figure was supplied here. I would discuss them directly based on the role, responsibilities, location, and overall opportunity.",
-    "requiresConfirmation": true
+    "answer": "I'm looking for compensation that is fair for the role, its responsibilities, my experience, and the overall opportunity. I'm open to discussing a range that aligns with the company's structure and market standards. My priority is finding the right role where I can contribute meaningfully and continue growing.",
+    "requiresConfirmation": false
   },
   {
     "id": "relocation",
@@ -1628,7 +1730,9 @@
     "variations": [
       "Can you move for the role?",
       "Are you open to relocation?",
-      "Do you prefer remote work?"
+      "Do you prefer remote work?",
+      "Would you move to another city?",
+      "Are you flexible about work location?"
     ],
     "keywords": [
       "relocate",
@@ -1636,7 +1740,7 @@
       "remote work",
       "move for role"
     ],
-    "answer": "My location and work-mode preferences have not been confirmed in this profile. I would answer that directly once the role's location and expectations are clear.",
+    "answer": "I'm open to considering relocation when the opportunity aligns well with my career goals. I would want to understand the role, location, and working arrangements before making a final commitment. This preference still requires my personal confirmation.",
     "requiresConfirmation": true
   },
   {
@@ -1670,7 +1774,7 @@
       "worked",
       "employer"
     ],
-    "answer": "My resume lists AI Engineer experience with UBS Technology Services, AI Crew, through Hays, from October 2025 to October 2026. My focus was enterprise AI automation, agent orchestration, API integrations, evaluation, and deployment. Earlier, I completed data-focused internships that helped me build analytical and problem-solving foundations.",
+    "answer": "I worked as an AI Engineer with the UBS Technology Services AI Crew through Hays from October 2025 to October 2026. I designed and engineered three enterprise AI applications using Python, FastAPI, LangChain, and LangGraph, with work spanning multi-agent orchestration, RAG, tool calling, evaluation, observability, CI/CD, and deployment on Azure and AKS. Earlier data analysis and data science internships gave me a strong foundation in data preparation, modeling, visualization, and business-focused problem solving.",
     "requiresConfirmation": false
   },
   {
@@ -1734,7 +1838,7 @@
       "certified",
       "azure fundamentals"
     ],
-    "answer": "My resumes list Microsoft Azure Fundamentals and Azure AI Fundamentals certifications, as well as a UBS NextGen AI – Agents in Action certificate of achievement. I have also completed learning programs covering Generative AI and GitHub Copilot. I see certifications as a foundation that becomes more valuable when paired with practical implementation.",
+    "answer": "I hold Microsoft Azure Fundamentals and Azure AI Fundamentals certifications, along with the UBS NextGen AI – Agents in Action Certificate of Achievement. I have also completed Generative AI for Everyone from DeepLearning.AI, GitHub Copilot learning programs, GitLab CI Fundamentals, and Agile Fundamentals. I treat certifications as a foundation and reinforce them through practical implementation.",
     "requiresConfirmation": false
   },
   {
@@ -1767,22 +1871,6 @@
       "document qa"
     ],
     "answer": "I built a SmartPDF question-answering application using Streamlit, LangChain, and FAISS. It extracts and chunks uploaded PDF text, retrieves relevant sections through semantic search, and uses an LLM to answer questions based on the document context. It helped me explore the fundamentals of retrieval-based applications.",
-    "requiresConfirmation": false
-  },
-  {
-    "id": "skills_framework",
-    "category": "projects",
-    "question": "What is the Agent Skills Framework?",
-    "variations": [
-      "Explain the skills sandbox",
-      "How do you add new agent skills?"
-    ],
-    "keywords": [
-      "skills framework",
-      "skills sandbox",
-      "executable skills"
-    ],
-    "answer": "The Request Management Service work included a reusable Agent Skills Framework and Sandbox for creating and evaluating executable AI skills from knowledge articles and PDFs. The goal was to expand supported workflows through reusable skill definitions instead of requiring application code changes for every new use case.",
     "requiresConfirmation": false
   },
   {
@@ -1846,7 +1934,7 @@
       "release management",
       "deployments"
     ],
-    "answer": "My concise resume reports involvement in more than 20 successful production releases, including deployment validation, monitoring, and release processes. That experience reinforced the importance of careful checks, observability, and reliable delivery. I would confirm the precise ownership and zero-error claim before using it as a formal achievement.",
+    "answer": "I managed more than 20 successful production releases with zero deployment errors, covering deployment planning, validation, monitoring, automated evaluation, observability, human approvals, and CI/CD. That experience taught me that production AI reliability depends as much on release discipline and feedback loops as it does on model capability.",
     "requiresConfirmation": false
   },
   {
@@ -1862,7 +1950,7 @@
       "evaluation tools",
       "llm evaluation"
     ],
-    "answer": "My project work includes DeepEval and evaluation-oriented workflows. I think useful evaluation must go beyond whether a response sounds good: it should check grounding, task success, tool behavior, failure handling, and consistency across representative cases.",
+    "answer": "I have used DeepEval and LLM feedback loops in evaluation-driven workflows. I evaluate more than whether a response sounds good: I look at grounding, task completion, retrieval quality, tool behavior, failure handling, and consistency across representative cases. Evaluation results become part of the feedback loop for improving agent prompts, tools, and workflow decisions.",
     "requiresConfirmation": false
   },
   {
@@ -1871,14 +1959,15 @@
     "question": "Which monitoring tools have you used?",
     "variations": [
       "Have you used OpenTelemetry?",
-      "How did you monitor agents?"
+      "How did you monitor agents?",
+      "How did you monitor your AI agents?"
     ],
     "keywords": [
       "opentelemetry",
       "grafana",
       "monitoring tools"
     ],
-    "answer": "My resume includes OpenTelemetry, Azure Monitor, and observability practices. For agentic systems, I want visibility into retrieval, tool calls, workflow transitions, errors, latency, and approval outcomes so that issues can be investigated instead of guessed at.",
+    "answer": "I have used OpenTelemetry, Azure Monitor, Grafana, and structured logging for AI-system observability. For agentic workflows, I monitor retrieval, model and tool calls, workflow transitions, errors, latency, approval outcomes, and release behavior so that failures can be traced with evidence rather than guessed at.",
     "requiresConfirmation": false
   },
   {
@@ -2058,19 +2147,23 @@
     "requiresConfirmation": false
   },
   {
-    "id": "voice_bot",
+    "id": "how_assistant_built",
     "category": "projects",
     "question": "How did you build this voice assistant?",
     "variations": [
       "Explain this bot",
-      "Does this voice bot use an LLM?"
+      "What technologies did you use for this website?",
+      "Explain the architecture of your voice assistant",
+      "How does your voice assistant work?",
+      "What is the technology stack of this project?",
+      "Did you develop this website yourself?"
     ],
     "keywords": [
       "voice bot",
       "this assistant",
       "how built"
     ],
-    "answer": "This is a browser-based personal voice assistant. It uses speech recognition to convert a spoken question to text, matches that question against a curated personal knowledge base, and uses browser speech synthesis to read the answer aloud. It does not require a paid LLM API, and I designed it to acknowledge questions outside its knowledge rather than invent personal facts.",
+    "answer": "I built this personal voice assistant using React, Vite, and JavaScript. It uses the browser's Web Speech API for recognition and Speech Synthesis for spoken responses. I created an editable JSON knowledge base and an intent matcher combining normalization, weighted keywords, category rules, and Fuse.js fuzzy search. It is deployed on Netlify and works without a paid AI API.",
     "requiresConfirmation": false
   },
   {
@@ -2207,14 +2300,18 @@
     "question": "Why are you looking for a new opportunity?",
     "variations": [
       "Why change jobs?",
-      "Why are you leaving your previous role?"
+      "Why are you leaving your previous role?",
+      "Why do you want to change your job?",
+      "Why are you looking for another opportunity?",
+      "What is your reason for changing jobs?",
+      "Why are you considering a career move?"
     ],
     "keywords": [
       "change jobs",
       "new opportunity",
       "leaving role"
     ],
-    "answer": "I am looking for an opportunity to deepen my AI engineering expertise and contribute to products where I can take on meaningful technical challenges. I particularly want to grow in Generative AI, Agentic AI, and reliable production systems. [Confirm this reflects your actual reason for changing roles.]",
+    "answer": "I'm looking for an opportunity that aligns closely with my long-term goals in AI engineering. My enterprise AI experience has strengthened my interest in building intelligent, scalable systems. I want to take on more challenging responsibilities, deepen my expertise in Generative AI and Agentic AI, and contribute to a team where I can keep learning while delivering meaningful results. This reason still requires my personal confirmation.",
     "requiresConfirmation": true
   },
   {
@@ -2255,7 +2352,10 @@
     "question": "How would you handle a disagreement with a teammate?",
     "variations": [
       "What if a teammate disagrees with you?",
-      "How do you resolve technical disagreements?"
+      "How do you resolve technical disagreements?",
+      "How do you deal with disagreements?",
+      "What if someone disagrees with your approach?",
+      "How do you keep disagreements professional?"
     ],
     "keywords": [
       "teammate disagreement",
@@ -2278,7 +2378,7 @@
       "quantify",
       "metrics achieved"
     ],
-    "answer": "My concise resume lists project scope figures such as over 200 daily service requests, more than 70 supported teams, and over 20 production releases. These figures describe the reported project or release scope; I would verify the exact measurement and attribution before stating them as my independently measured impact.",
+    "answer": "My resume records delivery across more than 200 daily service requests, four agentic workflows, over 70 supported teams, and more than 200 executable skills spanning 100 use cases. It also records more than 20 successful production releases. Beyond the numbers, the impact came from combining reusable automation, grounded retrieval, human approvals, evaluation, and observability into workflows that could be operated reliably.",
     "requiresConfirmation": false
   },
   {
@@ -2327,6 +2427,222 @@
       "trust in ai"
     ],
     "answer": "I believe trust comes from predictable behavior, clear limitations, grounded answers, and visible controls. For agentic systems, that includes constrained tools, audit trails, meaningful evaluation, and human approval when the consequences are significant.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "why_company",
+    "category": "hr",
+    "question": "Why do you want to work for our company?",
+    "variations": ["Why our company?", "Why do you want to join us?", "What attracts you to our organization?", "Why are you interested in this company?", "Why would you choose our organization?"],
+    "keywords": ["our company", "join company", "join us", "organization interest", "work for us"],
+    "answer": "I'm interested in organizations where technology is used to solve meaningful problems and engineers are encouraged to keep improving. My interests align strongly with AI engineering, automation, and intelligent systems. Since this assistant does not contain verified information about every employer, I would also research the company's products, culture, and current challenges before giving a company-specific answer.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "company_knowledge",
+    "category": "hr",
+    "question": "What do you know about our company?",
+    "variations": ["What have you learned about us?", "Have you researched our organization?", "What interests you about our business?", "Tell me what you know about the company", "How familiar are you with our organization?"],
+    "keywords": ["know company", "research company", "about organization", "about business", "familiar company"],
+    "answer": "I would want to answer this using current, verified research about the specific company rather than make a generic claim. Before an interview, I would study the organization's products, customers, engineering challenges, recent direction, and the role itself, then connect those details honestly to my AI engineering experience and career goals.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "why_position",
+    "category": "hr",
+    "question": "Why are you interested in this position?",
+    "variations": ["Why does this role interest you?", "Why did you apply for this position?", "What attracts you to this role?", "Why is this job right for you?", "Why do you want this opportunity?"],
+    "keywords": ["interested position", "interest role", "apply position", "attracts role", "want opportunity"],
+    "answer": "I'm interested in a position where I can apply my experience with Generative AI, Agentic AI, RAG, APIs, and cloud deployment to meaningful engineering problems. I also want a role that challenges me to deepen my system-design and reliability skills. The strongest fit would let me contribute practical experience while continuing to grow with the team.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "notice_period",
+    "category": "hr",
+    "question": "What is your notice period?",
+    "variations": ["How soon can you join?", "What is your joining availability?", "When would you be available to start?", "Do you have a notice period?", "What joining date can you commit to?"],
+    "keywords": ["notice period", "join soon", "joining date", "available start", "availability"],
+    "answer": "My exact notice period and availability should be confirmed based on my current employment arrangements. I would communicate a realistic joining date clearly and make sure I handle any transition responsibly rather than promise a date that I cannot meet.",
+    "requiresConfirmation": true
+  },
+  {
+    "id": "handle_failure",
+    "category": "hr",
+    "question": "How do you handle failure?",
+    "variations": ["How do you respond when something fails?", "What is your attitude toward failure?", "How do you recover from setbacks?", "What do you learn from failure?", "How do you handle an unsuccessful outcome?"],
+    "keywords": ["handle failure", "respond failure", "setback", "learn failure", "unsuccessful outcome"],
+    "answer": "I see failure as an opportunity to improve my approach. When something does not work as expected, I focus on understanding the root cause, acknowledging my responsibility, correcting the impact, and identifying what should change next time. This is my general approach; I would use a verified real example if an interviewer asked for a specific incident.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "why_computer_science",
+    "category": "hr",
+    "question": "Why did you choose Computer Science?",
+    "variations": ["Why did you study computer science?", "What attracted you to CSE?", "Why a computer science degree?", "Why did you select this field?", "How did computer science shape your career?"],
+    "keywords": ["choose computer science", "study computer science", "computer science degree", "choose cse", "select field"],
+    "answer": "Computer Science gave me the foundation to understand programming, software systems, and structured problem-solving. As I explored different areas of technology, AI engineering became especially interesting because it combines software development with intelligent automation. That interest shaped the projects, tools, and professional opportunities I chose to pursue.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "manager_expectations",
+    "category": "hr",
+    "question": "What are your expectations from your manager?",
+    "variations": ["What kind of manager helps you perform best?", "Describe your preferred manager", "How do you like to be managed?", "What support do you expect from a manager?", "What management style works for you?"],
+    "keywords": ["manager expectations", "preferred manager", "managed", "manager support", "management style"],
+    "answer": "I perform best with a manager who provides clear priorities and context, gives constructive feedback, and trusts the team to solve problems responsibly. I value openness when risks or questions need discussion, along with room to learn and take ownership. I also understand that management styles vary, so I try to adapt and communicate proactively.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "difficult_teammates",
+    "category": "hr",
+    "question": "How do you handle difficult teammates?",
+    "variations": ["How do you resolve team conflicts?", "What if a teammate is difficult to work with?", "How do you manage conflict in a team?", "How do you work with challenging personalities?", "What do you do when collaboration is difficult?"],
+    "keywords": ["difficult teammate", "team conflict", "challenging personality", "collaboration difficult", "resolve conflict"],
+    "answer": "I try not to label the person as difficult. I first understand the specific behavior, constraints, or communication gap affecting the work. I would discuss the issue respectfully, focus on shared goals and evidence, and agree on clear next steps. If the problem continued to affect delivery, I would involve the appropriate lead constructively rather than let frustration build.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "independent_work",
+    "category": "hr",
+    "question": "Are you comfortable working independently?",
+    "variations": ["Can you work without close supervision?", "How do you manage independent work?", "Do you prefer working alone?", "Can you take ownership independently?", "How autonomous are you at work?"],
+    "keywords": ["work independently", "without supervision", "independent work", "ownership independently", "autonomous work"],
+    "answer": "Yes. I am comfortable taking a clearly defined outcome, breaking it into manageable work, and progressing independently. At the same time, independence does not mean working in isolation. I communicate dependencies, surface risks early, and ask for input when a decision affects others or when collaboration can prevent unnecessary rework.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "work_life_balance",
+    "category": "hr",
+    "question": "How do you manage work-life balance?",
+    "variations": ["How do you avoid burnout?", "How do you balance work and personal life?", "What does healthy work balance mean to you?", "How do you manage sustained workloads?", "How do you maintain your energy at work?"],
+    "keywords": ["work life balance", "avoid burnout", "balance work", "healthy work balance", "sustained workload"],
+    "answer": "I try to maintain consistent planning, clear priorities, and realistic communication rather than depending on last-minute intensity. During demanding periods, I focus on the most important outcomes and raise risks early. Outside those periods, sustainable routines and continuous learning help me maintain energy and deliver dependable work over the long term.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "manager_description",
+    "category": "hr",
+    "question": "What would your manager say about you?",
+    "variations": ["How would your manager describe you?", "What feedback would your manager give?", "How do supervisors see you?", "What would a previous manager say?", "How are you perceived by your manager?"],
+    "keywords": ["manager say", "manager describe", "supervisor feedback", "manager perceive", "manager opinion"],
+    "answer": "A suggested answer, pending my confirmation, is that my manager would describe me as thoughtful, dependable, willing to learn, and serious about engineering quality. I would prefer to support that with actual feedback rather than present an assumed opinion as fact.",
+    "requiresConfirmation": true
+  },
+  {
+    "id": "professional_learning",
+    "category": "hr",
+    "question": "What is your greatest professional learning?",
+    "variations": ["What has your career taught you?", "What important lesson have you learned?", "What did enterprise AI work teach you?", "What is your biggest professional lesson?", "What have you learned from production AI?"],
+    "keywords": ["professional learning", "career taught", "important lesson", "professional lesson", "learned production"],
+    "answer": "My biggest professional learning is that a useful AI system is much more than a model response. Reliability depends on retrieval quality, API behavior, permissions, evaluation, observability, human approvals, and disciplined releases. That broader engineering perspective now shapes how I approach AI projects from the beginning.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "proud_decision",
+    "category": "hr",
+    "question": "What professional decision are you proud of?",
+    "variations": ["Which engineering decision are you proud of?", "What choice improved your work?", "Describe a decision you value", "What responsible decision have you made?", "Which technical choice are you proud of?"],
+    "keywords": ["proud decision", "engineering decision", "responsible decision", "technical choice", "decision value"],
+    "answer": "One engineering decision I value is treating human approval, dry-run behavior, evaluation, and observability as core parts of agentic automation rather than optional additions. That approach reflects the kind of engineer I want to be: focused not only on capability, but also on control, evidence, and dependable operation.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "repetitive_work",
+    "category": "hr",
+    "question": "How do you stay motivated during repetitive work?",
+    "variations": ["How do you handle repetitive tasks?", "Do routine tasks demotivate you?", "How do you remain focused on routine work?", "How do you approach monotonous work?", "What keeps you engaged with repeated tasks?"],
+    "keywords": ["repetitive work", "repetitive task", "routine task", "monotonous work", "repeated tasks"],
+    "answer": "I connect repetitive work to the outcome it supports and maintain quality through a clear process. I also look for safe opportunities to simplify or automate recurring steps without ignoring why they exist. Even when work is routine, consistency and attention matter because small errors can affect the larger system.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "cultural_fit",
+    "category": "hr",
+    "question": "Why are you a good cultural fit?",
+    "variations": ["How would you fit our team culture?", "What makes you a good team fit?", "Why would you fit our organization?", "What culture suits you?", "How do your values align with a team?"],
+    "keywords": ["cultural fit", "team culture", "team fit", "organization fit", "values align"],
+    "answer": "I value accountability, respectful collaboration, continuous learning, and engineering quality. I am comfortable asking questions, receiving feedback, and adapting when evidence changes the plan. Cultural fit is mutual, so I would also want to understand how the team communicates, makes decisions, and supports reliable delivery.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "exciting_projects",
+    "category": "hr",
+    "question": "What kind of projects excite you?",
+    "variations": ["Which projects interest you most?", "What work do you find exciting?", "What technical challenges motivate you?", "What would you like to build next?", "Which AI problems interest you?"],
+    "keywords": ["projects excite", "projects interest", "exciting work", "technical challenge motivate", "build next"],
+    "answer": "I am most excited by AI projects that connect models with real workflows, knowledge, APIs, and responsible tool use. I enjoy problems where reliability and system design matter, such as agentic automation, RAG, developer tooling, and enterprise integrations. The ideal project has a clear user need and measurable engineering challenges beyond a simple demo.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "long_term_company",
+    "category": "hr",
+    "question": "What would make you stay with a company long-term?",
+    "variations": ["Why would you remain with an organization?", "What creates career stability for you?", "What keeps you committed to a company?", "What do you value for long-term employment?", "What makes a role sustainable for you?"],
+    "keywords": ["stay long term", "remain company", "career stability", "committed company", "long term employment"],
+    "answer": "Meaningful work, continuous learning, constructive leadership, fair expectations, and opportunities to take on greater responsibility would support a long-term commitment. I value an environment where engineering quality matters and where growth comes from contributing to real outcomes, not simply changing titles.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "professionalism",
+    "category": "hr",
+    "question": "What does professionalism mean to you?",
+    "variations": ["How do you define professionalism?", "What makes someone professional?", "How do you behave professionally?", "What are professional standards to you?", "What does professional conduct mean?"],
+    "keywords": ["professionalism", "define professional", "professional standards", "professional conduct", "behave professionally"],
+    "answer": "Professionalism means being dependable, respectful, honest about uncertainty, and accountable for commitments. It includes communicating risks early, protecting sensitive information, accepting feedback, and maintaining quality even when work is not highly visible. For me, professionalism is demonstrated through consistent decisions and behavior rather than a title.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "disagree_manager",
+    "category": "hr",
+    "question": "What would you do if you disagreed with your manager?",
+    "variations": ["How do you handle disagreement with a manager?", "What if your manager chooses a different approach?", "Would you challenge your manager?", "How do you raise a concern with leadership?", "How do you discuss a decision you disagree with?"],
+    "keywords": ["disagree manager", "manager disagreement", "challenge manager", "concern leadership", "decision disagree"],
+    "answer": "I would first make sure I understand the manager's reasoning and constraints. Then I would explain my concern respectfully, using requirements, risks, and evidence rather than personal preference. Once a decision is made, I would support it professionally unless it created a serious ethical, security, or safety concern that needed escalation.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "explain_ai_simple",
+    "category": "hr",
+    "question": "How would you explain AI to a nontechnical person?",
+    "variations": ["Explain artificial intelligence simply", "How do you describe AI to a business user?", "Can you explain AI without jargon?", "What is AI in simple words?", "How would you explain an AI system to HR?"],
+    "keywords": ["explain ai simple", "ai nontechnical", "ai business user", "without jargon", "simple words"],
+    "answer": "I would describe AI as software that identifies patterns in information and uses them to support tasks such as understanding language, finding relevant knowledge, or recommending a next step. It does not understand or guarantee truth like a person, so useful AI systems still need good data, clear limits, testing, and human judgment.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "trust_responsibility",
+    "category": "hr",
+    "question": "Why should we trust you with important responsibilities?",
+    "variations": ["How do you earn professional trust?", "Can we rely on you?", "Why are you dependable?", "How would you handle an important responsibility?", "What makes you trustworthy at work?"],
+    "keywords": ["trust responsibility", "earn trust", "rely on you", "dependable", "trustworthy work"],
+    "answer": "I try to earn trust through clear commitments, honest communication, careful execution, and accountability when something changes. I do not pretend to know what I have not verified. For important work, I clarify expectations, make risks visible, validate the result, and follow through until the outcome is stable.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "unknown_skill",
+    "category": "technical",
+    "question": "Do you know a technology outside your current stack?",
+    "variations": ["Have you used a technology you do not know yet?", "Can you learn a missing skill?", "What if we require an unfamiliar technology?", "Are you willing to learn another technology stack?", "Can you work with a tool outside your experience?"],
+    "keywords": ["unknown skill", "missing skill", "unfamiliar technology", "different stack", "outside experience"],
+    "answer": "I haven't had the opportunity to work extensively with that technology yet, so I would not want to overstate my experience. I am comfortable learning new tools by understanding the fundamentals, exploring practical examples, and applying them through hands-on implementation. I would be happy to develop that skill if the role requires it.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "known_skill",
+    "category": "technical",
+    "question": "Have you used a technology in your verified skill set?",
+    "variations": ["Do you have experience with one of your listed skills?", "Is this technology in your current stack?", "Have you worked with a listed tool?", "Which technologies have you used?", "Is this a verified skill?"],
+    "keywords": ["verified skill", "listed skill", "current stack", "worked with tool", "skill experience"],
+    "answer": "That technology is part of my verified skill inventory. My level of depth varies by tool, so I would describe the specific project context honestly rather than imply equal expertise across the entire stack.",
+    "requiresConfirmation": false
+  },
+  {
+    "id": "out_of_scope",
+    "category": "conversation",
+    "question": "Can you answer an unrelated question?",
+    "variations": ["What is today's weather?", "Tell me a joke", "Who won yesterday's match?", "What is the latest stock price?", "Can you solve unrelated homework?"],
+    "keywords": ["unrelated question", "weather today", "tell joke", "match result", "stock price"],
+    "answer": "That's an interesting question, but this assistant is designed to share information about my professional background, AI engineering experience, projects, and career goals. I'd be happy to discuss any of those areas.",
     "requiresConfirmation": false
   }
 ]

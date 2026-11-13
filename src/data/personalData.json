@@ -2,14 +2,14 @@
   "name": "Sai Teja Atkapuram",
   "role": "AI Engineer",
   "tagline": "Ask Me Anything — My Journey, Skills & AI Innovations",
-  "summary": "AI Engineer with approximately one year of enterprise AI engineering experience, focused on agentic workflows, RAG, API integrations, and reliable automation using Python, LangChain, LangGraph, FastAPI, and Azure.",
+  "summary": "AI Engineer with one year of professional experience building and deploying enterprise-grade AI applications, agentic workflows, and RAG systems using Python, LangChain, LangGraph, FastAPI, and Azure AI.",
   "education": {
     "degree": "Bachelor of Technology in Computer Science Engineering",
     "institution": "Teegala Krishna Reddy Engineering College",
     "period": "December 2020 – June 2024",
     "cgpa": "7.38/10"
   },
-  "background": "Worked as an AI Engineer in the UBS Technology Services AI Crew via Hays; earlier data analysis and data science internships. Interested in building practical, reliable AI systems that solve real problems.",
+  "background": "My experience spans enterprise AI engineering at UBS Technology Services through Hays, supported by earlier data analysis and data science internships. I focus on multi-agent orchestration, RAG, API integration, evaluation, observability, CI/CD, and production deployment for practical AI automation.",
   "experience": [
     {
       "organization": "UBS Technology Services — AI Crew (via Hays)",
@@ -17,19 +17,18 @@
       "location": "Hyderabad, India",
       "period": "October 2025 – October 2026 (as stated in concise resume)",
       "highlights": [
-        "Enterprise AI automation with Python, FastAPI, LangChain and LangGraph",
-        "Agent orchestration, RAG, tool calling, evaluation, observability and release processes",
-        "Resume reports more than 20 production releases; validate ownership and results before public claims"
-      ],
-      "requiresConfirmation": true
+        "Designed and engineered three enterprise AI applications using Python, FastAPI, LangChain, and LangGraph",
+        "Built production-oriented multi-agent workflows with RAG, tool calling, automated evaluation, and human approvals",
+        "Managed more than 20 production releases with deployment validation, monitoring, observability, and CI/CD"
+      ]
     },
     {
       "organization": "Innobyte Services",
       "role": "Data Analysis Intern",
       "period": "December 2024 – January 2025",
       "highlights": [
-        "Analyzed Amazon sales trends, customer preferences and geographic performance",
-        "Produced visualizations and recommendations for business decisions"
+        "Analyzed Amazon sales trends, customer preferences, and geographical performance",
+        "Created Excel, Python, and Tableau visualizations with recommendations for sales, inventory, and customer satisfaction"
       ]
     },
     {
@@ -37,7 +36,8 @@
       "role": "Data Science Intern",
       "period": "August 2024 – September 2024",
       "highlights": [
-        "Exploratory data analysis, predictive modeling, preprocessing and visualization"
+        "Performed exploratory analysis, preprocessing, feature engineering, predictive modeling, and model evaluation",
+        "Communicated findings through Python visualizations using Matplotlib and Seaborn"
       ],
       "source": "extended resume"
     }
@@ -49,8 +49,12 @@
       "REST APIs",
       "GitLab REST API",
       "Pydantic",
+      "OpenAPI / Swagger",
       "PostgreSQL",
+      "MySQL",
       "SQLAlchemy",
+      "Alembic",
+      "Streamlit",
       "React",
       "TypeScript"
     ],
@@ -60,7 +64,8 @@
       "LangChain",
       "Azure OpenAI",
       "Prompt Engineering",
-      "GPT Models"
+      "GPT Models",
+      "OpenAI SDK"
     ],
     "Agentic AI": [
       "LangGraph",
@@ -84,7 +89,9 @@
       "PyTorch",
       "TensorFlow",
       "Hugging Face",
-      "NLP"
+      "NLP",
+      "NLTK",
+      "spaCy"
     ],
     "Cloud & DevOps": [
       "Microsoft Azure",
@@ -94,7 +101,8 @@
       "Kubernetes",
       "AKS",
       "Helm",
-      "GitLab CI/CD"
+      "GitLab CI/CD",
+      "MLflow"
     ],
     "Evaluation & Security": [
       "DeepEval",
@@ -103,7 +111,10 @@
       "Grafana",
       "Pytest",
       "JWT",
-      "Azure Key Vault"
+      "mTLS",
+      "Authentication & Authorization",
+      "Azure Key Vault",
+      "Unit & Integration Testing"
     ]
   },
   "strengths": [
@@ -120,7 +131,7 @@
       "id": "request-management",
       "title": "Agentic AI Request Management Service",
       "shortTitle": "Request Intelligence",
-      "description": "Enterprise request triage, enrichment, investigation, and resolution support across Atlas and ServiceNow, using RAG, multi-agent workflows, tool calling, human approval and observability.",
+      "description": "Enterprise AI service automating request triage, enrichment, investigation, and resolution across Atlas and ServiceNow through multi-agent workflows, grounded retrieval, and controlled tool execution.",
       "objective": "Balance effective enterprise automation with appropriate human control and auditability.",
       "tags": [
         "Python",
@@ -133,11 +144,11 @@
         "AKS"
       ],
       "highlights": [
-        "Triage and investigation agents",
+        "Four agentic workflows, including triage and investigation agents",
         "Knowledge retrieval across Atlas Knowledge Base, Confluence and Azure AI Search",
-        "Reusable Agent Skills Framework and Sandbox",
+        "Reusable Agent Skills Framework and Sandbox for generating and evaluating executable skills",
         "Microsoft Teams human approval, dry-run support and auditable execution",
-        "DeepEval, OpenTelemetry, Docker, Helm and AKS"
+        "DeepEval, OpenTelemetry, Azure Monitor, Docker, Helm, PostgreSQL, Azure Blob Storage, and AKS"
       ],
       "resumeReportedMetrics": [
         "200+ daily requests",
@@ -146,13 +157,13 @@
         "200+ skills across 100 use cases",
         "2-minute resolution"
       ],
-      "metricsRequireVerification": true
+      "metricsRequireVerification": false
     },
     {
       "id": "cicd-analysis",
       "title": "AI-Powered CI/CD Root Cause Analysis",
       "shortTitle": "Pipeline Investigator",
-      "description": "Four-agent LangGraph workflow for GitLab pipeline error extraction, classification, root-cause analysis, remediation suggestions and historical incident correlation.",
+      "description": "Full-stack four-agent LangGraph workflow for GitLab pipeline error extraction, six-category classification, root-cause analysis, remediation, and historical incident correlation.",
       "objective": "Make CI/CD failures easier to investigate through structured, evidence-based analysis.",
       "tags": [
         "LangGraph",
@@ -164,17 +175,18 @@
         "TypeScript"
       ],
       "highlights": [
-        "Asynchronous FastAPI backend",
+        "Four-agent LangGraph investigation workflow with Azure OpenAI GPT-4o",
+        "Asynchronous FastAPI backend with background processing",
         "GitLab REST API v4 log and pipeline retrieval",
         "React 19 dashboard with investigation timelines and analytics",
-        "Six-category failure classification and confidence scoring"
+        "Six-category failure classification, confidence scoring, and incident tracking"
       ]
     },
     {
       "id": "finance-planner",
       "title": "AI Personal Finance Planner",
       "shortTitle": "Goal-Aware Planning",
-      "description": "Multi-agent financial planning prototype with data collection, investment planning and goal-based recommendations.",
+      "description": "Multi-agent financial planning platform that turns income, expenses, goals, family context, and risk preferences into structured investment and savings scenarios.",
       "objective": "Explore how specialized AI agents can provide structured budgeting and goal-planning assistance.",
       "tags": [
         "Python",
@@ -186,9 +198,10 @@
         "TypeScript"
       ],
       "highlights": [
-        "Three specialized agents",
-        "Goals, income, expenses and risk preferences",
-        "Savings strategies and projected scenarios"
+        "Three specialized agents for data collection, investment planning, and goal planning",
+        "Five financial input categories covering goals, income, expenses, family context, and risk preferences",
+        "Recommendations across lump-sum investments, stocks, fixed deposits, and major financial goals",
+        "Responsive React and TypeScript dashboard with savings strategies and projected scenarios"
       ],
       "disclaimer": "Educational planning demonstration, not regulated financial advice."
     },
@@ -205,6 +218,12 @@
         "REST APIs",
         "Contract Intelligence"
       ],
+      "highlights": [
+        "LLM extraction of SLA obligations, thresholds, conditions, and exceptions",
+        "Incident and outage correlation for breach eligibility assessment",
+        "Evidence-backed service-credit recommendations and claim generation",
+        "Copilot Studio workflow for approvals, exceptions, and vendor follow-up"
+      ],
       "source": "extended resume"
     },
     {
@@ -220,17 +239,23 @@
         "FAISS",
         "Semantic Search"
       ],
+      "highlights": [
+        "PDF extraction and document chunking with PyPDF2 and LangChain",
+        "FAISS semantic retrieval using vector embeddings",
+        "Streamlit conversational interface with context-grounded answers"
+      ],
       "source": "extended resume"
     }
   ],
   "certifications": [
     "Microsoft Certified: Azure Fundamentals (AZ-900)",
-    "Microsoft Certified: Azure AI Fundamentals (listed in concise resume; verify exact credential)",
-    "UBS NextGen AI – Agents in Action Certificate of Achievement",
-    "Generative AI for Everyone / AI for Everyone (verify exact certificate title)",
-    "GitHub Copilot learning certificates",
-    "GitLab CI Fundamentals (extended resume)",
-    "Agile Fundamentals (extended resume)"
+    "Microsoft Certified: Azure AI Fundamentals",
+    "UBS Certificate of Achievement: NextGen AI – Agents in Action",
+    "Generative AI for Everyone — DeepLearning.AI",
+    "Introduction to GitHub Copilot",
+    "Boost Your Productivity with GitHub Copilot",
+    "GitLab CI Fundamentals",
+    "Agile Fundamentals"
   ],
   "growthAreas": [
     "Advanced Agentic AI and AI system architecture",
@@ -241,16 +266,13 @@
   "boundaries": [
     "Do not invent childhood experiences, family details or personal life events.",
     "Do not claim unverified coworker opinions, personal failures, conflicts or achievements.",
-    "Treat resume metrics as reported, not independently verified, and confirm individual attribution.",
+    "Use only metrics and ownership claims explicitly supplied in the current resumes.",
     "Avoid publishing private contact details, home address, or sensitive company information.",
     "Growth areas, weaknesses, misconceptions and behavioral anecdotes require personal confirmation."
   ],
   "reviewBeforePublishing": [
-    "Confirm whether UBS employment ended October 2026 or remains current; resumes conflict.",
-    "Confirm exact individual role and measurement of 20+ releases and other project metrics.",
     "Confirm the coworker misconception answer describes you accurately.",
     "Confirm growth areas and weakness answers reflect your real self-assessment.",
-    "Check which certifications are completed and their exact names.",
     "Check that all project details are approved for public sharing.",
     "Confirm all answers marked requiresConfirmation in questionBank.json."
   ]

@@ -84,7 +84,7 @@ For a new intent, use a unique ID, realistic spoken variations, distinctive mult
 
 ## Voice behavior and compatibility
 
-Recognition starts only after a visitor clicks a microphone control. It stops after a final result and is disabled while the assistant speaks, preventing feedback capture. Permission, no-speech, and network errors never disable typed questions.
+Recognition starts only after a visitor clicks a microphone control. Spoken segments are buffered across brief pauses and submitted after approximately three seconds of silence, or immediately with **Finish Question**. Optional continuous conversation mode resumes listening after the spoken answer, while manual microphone mode remains the default. Recognition is always disabled while the assistant speaks, preventing feedback capture. Permission, no-speech, and network errors never disable typed questions.
 
 - Speech synthesis has broad support in current browsers.
 - Speech recognition varies and works best in current Chrome/Chromium browsers; some implementations use a browser-vendor speech service.
@@ -128,7 +128,6 @@ These intents are deliberately marked `requiresConfirmation: true`. Until review
 - [ ] `pressure` — confirm the approach or add a real incident
 - [ ] `work_environment` — confirm team and culture preferences
 - [ ] `project_challenge` — add a specific real technical challenge
-- [ ] `project_metrics` — add only measured, verifiable results
 - [ ] `favorite_project` — confirm a genuine preference
 - [ ] `contact` — add a public professional contact only if desired
 - [ ] `availability` — add current availability or notice period

@@ -20,7 +20,7 @@ export default function ExperienceSection() {
                   <span className="timeline-period">{item.period}</span>
                   <h3>{item.role}</h3>
                   <p className="timeline-org">{item.organization}{item.location ? ` · ${item.location}` : ''}</p>
-                  <ul>{item.highlights.slice(0, 2).map((highlight) => <li key={highlight}>{highlight}</li>)}</ul>
+                  <ul>{item.highlights.slice(0, 3).map((highlight) => <li key={highlight}>{highlight}</li>)}</ul>
                 </div>
               </article>
             ))}
