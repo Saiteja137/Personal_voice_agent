@@ -1,56 +1,48 @@
-# Sai Teja AI — Personal Voice Assistant
+# Meet Sai Teja AI
 
-An interactive personal portfolio that answers recruiter and interview questions in Sai Teja Atkapuram's voice. It combines a reviewed personal knowledge base, fuzzy intent matching, and browser-native speech APIs in a polished React interface.
+Sai Teja's personal AI voice assistant is an interactive portfolio designed for recruiters and hiring teams. Visitors can ask questions by voice or text and receive clear, pre-reviewed answers about Sai Teja Atkapuram's experience, skills, projects, achievements, and career goals.
 
-This project is intentionally **not presented as a generative LLM**. It is a personalized, knowledge-based assistant: every answer is stored, editable, and grounded in the supplied profile. It uses no paid AI API, backend, database, account, API key, or environment variable.
+## What the assistant offers
 
-## Highlights
+- 160 curated recruiter and interview question intents
+- Voice and text-based questions
+- Male English voice preference with adjustable speaking speed
+- Answers grounded in Sai Teja's professional profile and resume
+- Project, technical, behavioral, and HR interview coverage
+- Safe fallback for unsupported or unrelated questions
+- Responsive interface for desktop and mobile devices
+- No account, API key, paid AI service, backend, or database required
 
-- Browser speech recognition with explicit start/stop controls and `en-IN` preference
-- Browser speech synthesis with natural English voice selection, replay, stop, and speed control
-- Typed fallback on every browser
-- 130+ recruiter-ready question intents with multiple variations
-- Hybrid matching: text normalization, synonym expansion, keyword weighting, and Fuse.js fuzzy search
-- Low-confidence fallback instead of confidently answering unrelated questions
-- Explicit confirmation-safe answers for unverified personal or behavioral claims
-- Conversation history, live transcript, suggestions, project shortcuts, and clear states
-- Responsive premium dark interface with reduced-motion support and keyboard accessibility
-- Static deployment to Netlify or Vercel with no secrets
+## How it works
+
+The assistant uses a reviewed knowledge bank rather than generating unverified answers. A visitor's question is normalized and compared with stored questions, common variations, and weighted keywords. Fuzzy matching helps recognize natural phrasing and speech-to-text differences.
+
+When the match is sufficiently confident, the assistant returns the corresponding reviewed answer. If the question is outside the portfolio's scope or the confidence is too low, it provides a clear fallback instead of inventing information.
+
+Voice input and output use the browser's Web Speech APIs. Questions can also be typed, so the portfolio remains usable when speech recognition is unavailable.
 
 ## Technology
 
-- React 19 + Vite 7
+- React 19 and Vite 7
 - JavaScript
-- Tailwind CSS 4 (Vite plugin) plus a custom design layer
-- Framer Motion, Lucide React, Fuse.js, Web Speech API, and Vitest
-
-## Architecture
-
-```text
-src/
-├── components/             UI sections and conversation components
-├── data/
-│   ├── personalData.json   Authoritative public professional profile
-│   └── questionBank.json   Editable intents, variations, keywords, and answers
-├── hooks/                  Browser recognition and synthesis
-├── utils/                  Normalization, matching, response handling, and tests
-├── App.jsx
-├── index.css
-└── main.jsx
-```
-
-The matcher normalizes natural speech and technical spellings, expands relevant synonyms, searches questions and variations through Fuse.js, and combines fuzzy relevance with weighted keyword overlap. It returns a reviewed answer only above the confidence threshold; otherwise it uses a neutral fallback.
+- Tailwind CSS 4
+- Framer Motion
+- Fuse.js
+- Web Speech API
+- Vitest
 
 ## Run locally
 
-Requires a current Node.js LTS release.
+Use a current Node.js LTS release.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Production checks:
+Open the local address displayed by Vite.
+
+To verify a production build:
 
 ```bash
 npm test
@@ -58,117 +50,64 @@ npm run build
 npm run preview
 ```
 
-The production output is generated in `dist/`.
+The production files are generated in `dist/`.
 
-> On Windows, if PowerShell blocks `npm.ps1`, run `npm.cmd install`, `npm.cmd test`, and `npm.cmd run build`.
+> On Windows, if PowerShell blocks `npm.ps1`, use `npm.cmd install`, `npm.cmd test`, and `npm.cmd run build`.
 
-## Edit profile and answers
+## Configuration
 
-Edit [`src/data/personalData.json`](src/data/personalData.json) to update the public profile, skills, project descriptions, objectives, and career goal. Keep it suitable for a public portfolio.
+### Professional profile
 
-Edit [`src/data/questionBank.json`](src/data/questionBank.json) to change interview answers or add intents:
+Update `src/data/personalData.json` to maintain the public profile, experience, skills, projects, achievements, and career information shown throughout the portfolio.
 
-```json
-{
-  "id": "biggest_strength",
-  "category": "personality",
-  "question": "What is your biggest strength?",
-  "variations": ["What are your strengths?"],
-  "keywords": ["strength", "good at"],
-  "answer": "My biggest strength is structured problem-solving...",
-  "requiresConfirmation": false
-}
-```
+### Questions and answers
 
-For a new intent, use a unique ID, realistic spoken variations, distinctive multi-word keywords, and a grounded first-person answer. Set `requiresConfirmation: true` for any unverified opinion, incident, metric, preference, or personal claim. Add representative cases to `src/utils/questionMatcher.test.js` and run `npm test`.
+Update `src/data/questionBank.json` to edit an answer or add a new recruiter question. Each intent contains:
 
-## Voice behavior and compatibility
+- A unique `id`
+- A category and primary question
+- Natural question variations
+- Distinctive matching keywords
+- A reviewed first-person answer
+- An optional `requiresConfirmation` safety flag
 
-Recognition starts only after a visitor clicks a microphone control. Spoken segments are buffered across brief pauses and submitted after approximately three seconds of silence, or immediately with **Finish Question**. Optional continuous conversation mode resumes listening after the spoken answer, while manual microphone mode remains the default. Recognition is always disabled while the assistant speaks, preventing feedback capture. Permission, no-speech, and network errors never disable typed questions.
+After changing the knowledge bank, run `npm test` to check matching behavior.
 
-- Speech synthesis has broad support in current browsers.
-- Speech recognition varies and works best in current Chrome/Chromium browsers; some implementations use a browser-vendor speech service.
-- Firefox and some Safari versions may not expose compatible recognition.
-- Available voices vary by operating system and browser.
-- Microphone access requires HTTPS in production or `localhost` during development.
-- Text matching and answers are local and require no AI network service.
+### Voice settings
 
-## Test checklist
+Voice behavior is configured in:
 
-The automated suite covers 21 paraphrases, mandatory profile areas, all projects, confirmation-safe topics, and unrelated-question fallback.
+- `src/hooks/useSpeechRecognition.js` for language and silence detection
+- `src/hooks/useSpeechSynthesis.js` for voice preference and default speed
+- `src/components/VoiceAssistant.jsx` for conversation controls and speed range
 
-```bash
-npm test
-```
+The current defaults are:
 
-Manual browser checks:
+- Recognition language: `en-IN`
+- Silence before submitting a question: 3 seconds
+- Preferred output: an installed male English voice
+- Speaking speed: `1.1x`, adjustable from `0.8x` to `1.4x`
 
-- [ ] Allow microphone access and ask “Tell me about yourself.”
-- [ ] Stop listening, restart it, and deny permission once to verify error handling.
-- [ ] Ask each mandatory assignment question and each featured project question.
-- [ ] Replay a response, adjust speed, and stop speech.
-- [ ] Verify recognition cannot start while speech synthesis is active.
-- [ ] Ask an unrelated question and verify the neutral fallback.
-- [ ] Complete several turns and clear the conversation.
-- [ ] Test keyboard-only navigation, visible focus, and reduced motion.
-- [ ] Test narrow mobile, tablet, and desktop layouts.
-- [ ] Test the deployed HTTPS URL in Chrome/Edge and a browser without recognition.
+Available voices depend on the visitor's browser and operating system.
 
-## Personal Answers Review Checklist
+## Browser support
 
-These intents are deliberately marked `requiresConfirmation: true`. Until reviewed, the assistant labels the text as a suggestion or declines to invent a fact.
+Typed questions work across modern browsers. Voice recognition works best in current Chrome and Edge versions. Microphone access requires `localhost` during development or HTTPS after deployment. If voice recognition is unavailable or permission is denied, the text input remains fully functional.
 
-- [ ] `biggest_weakness` — confirm or replace the suggested communication weakness
-- [ ] `coworker_misconception` — confirm or replace the suggested interpretation
-- [ ] `conflict` — add a real conflict or disagreement example
-- [ ] `failure_story` — add a real mistake, response, and lesson
-- [ ] `project_challenge` — add a specific real technical challenge
-- [ ] `favorite_project` — confirm a genuine preference
-- [ ] `contact` — add a public professional contact only if desired
-- [ ] `availability` — add current availability or notice period
-- [ ] `relocation` — confirm location, remote-work, and relocation preferences
-- [ ] `why_move` — confirm the reason for seeking a new opportunity
-- [ ] `notice_period` — confirm the exact notice period and joining date
-- [ ] `manager_description` — replace the suggested manager opinion with verified feedback
+## Deploy to Netlify
 
-Also review any future response involving childhood, family, employers, coworker opinions, production deployment, ownership, leadership, conflict, failure, achievements, financial expectations, or performance metrics.
+The included `netlify.toml` runs the production build and publishes `dist/`.
 
-## Deploy free to Netlify
+For Git-based deployment:
 
-The included `netlify.toml` uses `npm run build` and publishes `dist`.
+1. Push the repository to GitHub or another supported Git provider.
+2. Import the repository into Netlify.
+3. Confirm the build command is `npm run build`.
+4. Confirm the publish directory is `dist`.
+5. Deploy and test microphone permission on the HTTPS site.
 
-### Netlify Drop
+No environment variables are required.
 
-1. Run `npm install`.
-2. Run `npm run build`.
-3. Open <https://app.netlify.com/drop>.
-4. Upload the generated `dist` folder.
-5. Open the public HTTPS Netlify URL.
-6. Test text, microphone permission, recognition, and synthesis on the deployed site.
+## Privacy
 
-For Git-based deployment, import the repository in Netlify. The build settings are read from `netlify.toml`. No environment variables are required.
-
-## Deploy free to Vercel
-
-1. Push the project to a Git repository.
-2. Import it at <https://vercel.com/new>.
-3. Confirm the build command is `npm run build` and output directory is `dist`.
-4. Deploy and test voice permissions on the HTTPS URL.
-
-The included `vercel.json` preserves static route behavior.
-
-## Troubleshooting
-
-**Microphone unavailable:** The browser does not expose compatible speech recognition. Use typed questions or current Chrome/Edge.
-
-**Permission denied:** Allow microphone access in site settings, reload, and click the microphone again.
-
-**Recognition network error:** Some implementations depend on a vendor service. Typed matching continues to work locally.
-
-**Wrong answer selected:** Add the real paraphrase to the intended intent, add a distinctive keyword phrase, and add a regression test. Avoid globally weakening the threshold.
-
-**Unexpected voice:** The app prefers `en-IN`, then another installed English voice. The device controls availability.
-
-## Privacy and limitations
-
-Personal answers are public static assets in the built site, so include only portfolio-appropriate information. The assistant cannot answer beyond its reviewed knowledge bank, learn from conversations, or reason like a generative model. That boundary keeps answers editable, predictable, inexpensive, and honest.
+All portfolio data and answers are included in the public static build. Only professional information suitable for public viewing should be added to the profile or question bank. The assistant does not store conversations or require visitor accounts.
