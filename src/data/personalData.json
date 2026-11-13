@@ -1,0 +1,257 @@
+{
+  "name": "Sai Teja Atkapuram",
+  "role": "AI Engineer",
+  "tagline": "Ask Me Anything — My Journey, Skills & AI Innovations",
+  "summary": "AI Engineer with approximately one year of enterprise AI engineering experience, focused on agentic workflows, RAG, API integrations, and reliable automation using Python, LangChain, LangGraph, FastAPI, and Azure.",
+  "education": {
+    "degree": "Bachelor of Technology in Computer Science Engineering",
+    "institution": "Teegala Krishna Reddy Engineering College",
+    "period": "December 2020 – June 2024",
+    "cgpa": "7.38/10"
+  },
+  "background": "Worked as an AI Engineer in the UBS Technology Services AI Crew via Hays; earlier data analysis and data science internships. Interested in building practical, reliable AI systems that solve real problems.",
+  "experience": [
+    {
+      "organization": "UBS Technology Services — AI Crew (via Hays)",
+      "role": "AI Engineer",
+      "location": "Hyderabad, India",
+      "period": "October 2025 – October 2026 (as stated in concise resume)",
+      "highlights": [
+        "Enterprise AI automation with Python, FastAPI, LangChain and LangGraph",
+        "Agent orchestration, RAG, tool calling, evaluation, observability and release processes",
+        "Resume reports more than 20 production releases; validate ownership and results before public claims"
+      ],
+      "requiresConfirmation": true
+    },
+    {
+      "organization": "Innobyte Services",
+      "role": "Data Analysis Intern",
+      "period": "December 2024 – January 2025",
+      "highlights": [
+        "Analyzed Amazon sales trends, customer preferences and geographic performance",
+        "Produced visualizations and recommendations for business decisions"
+      ]
+    },
+    {
+      "organization": "Oasis Infobyte",
+      "role": "Data Science Intern",
+      "period": "August 2024 – September 2024",
+      "highlights": [
+        "Exploratory data analysis, predictive modeling, preprocessing and visualization"
+      ],
+      "source": "extended resume"
+    }
+  ],
+  "skills": {
+    "Programming & APIs": [
+      "Python",
+      "FastAPI",
+      "REST APIs",
+      "GitLab REST API",
+      "Pydantic",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "React",
+      "TypeScript"
+    ],
+    "Generative AI": [
+      "Generative AI",
+      "LLM Applications",
+      "LangChain",
+      "Azure OpenAI",
+      "Prompt Engineering",
+      "GPT Models"
+    ],
+    "Agentic AI": [
+      "LangGraph",
+      "Multi-Agent Systems",
+      "Tool Calling",
+      "Agentic Workflows",
+      "Human-in-the-Loop"
+    ],
+    "Retrieval Systems": [
+      "RAG",
+      "FAISS",
+      "ChromaDB",
+      "Embeddings",
+      "Vector Databases",
+      "Azure AI Search"
+    ],
+    "AI & Data": [
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "PyTorch",
+      "TensorFlow",
+      "Hugging Face",
+      "NLP"
+    ],
+    "Cloud & DevOps": [
+      "Microsoft Azure",
+      "Azure AI Foundry",
+      "Azure DevOps",
+      "Docker",
+      "Kubernetes",
+      "AKS",
+      "Helm",
+      "GitLab CI/CD"
+    ],
+    "Evaluation & Security": [
+      "DeepEval",
+      "OpenTelemetry",
+      "Azure Monitor",
+      "Grafana",
+      "Pytest",
+      "JWT",
+      "Azure Key Vault"
+    ]
+  },
+  "strengths": [
+    "Structured problem-solving",
+    "Learning through implementation",
+    "API and system integration",
+    "Turning AI concepts into practical applications",
+    "Curiosity and continuous learning",
+    "Attention to reliability and responsible automation"
+  ],
+  "careerGoal": "Grow as an AI Engineer, Generative AI Engineer, and Agentic AI Engineer, designing scalable, reliable, production-ready AI systems with strong evaluation, architecture, and responsible tool use.",
+  "projects": [
+    {
+      "id": "request-management",
+      "title": "Agentic AI Request Management Service",
+      "shortTitle": "Request Intelligence",
+      "description": "Enterprise request triage, enrichment, investigation, and resolution support across Atlas and ServiceNow, using RAG, multi-agent workflows, tool calling, human approval and observability.",
+      "objective": "Balance effective enterprise automation with appropriate human control and auditability.",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "LangGraph",
+        "ServiceNow",
+        "RAG",
+        "Azure AI Search",
+        "AKS"
+      ],
+      "highlights": [
+        "Triage and investigation agents",
+        "Knowledge retrieval across Atlas Knowledge Base, Confluence and Azure AI Search",
+        "Reusable Agent Skills Framework and Sandbox",
+        "Microsoft Teams human approval, dry-run support and auditable execution",
+        "DeepEval, OpenTelemetry, Docker, Helm and AKS"
+      ],
+      "resumeReportedMetrics": [
+        "200+ daily requests",
+        "4 agentic workflows",
+        "70+ teams",
+        "200+ skills across 100 use cases",
+        "2-minute resolution"
+      ],
+      "metricsRequireVerification": true
+    },
+    {
+      "id": "cicd-analysis",
+      "title": "AI-Powered CI/CD Root Cause Analysis",
+      "shortTitle": "Pipeline Investigator",
+      "description": "Four-agent LangGraph workflow for GitLab pipeline error extraction, classification, root-cause analysis, remediation suggestions and historical incident correlation.",
+      "objective": "Make CI/CD failures easier to investigate through structured, evidence-based analysis.",
+      "tags": [
+        "LangGraph",
+        "Azure OpenAI",
+        "GPT-4o",
+        "GitLab REST API",
+        "FastAPI",
+        "React",
+        "TypeScript"
+      ],
+      "highlights": [
+        "Asynchronous FastAPI backend",
+        "GitLab REST API v4 log and pipeline retrieval",
+        "React 19 dashboard with investigation timelines and analytics",
+        "Six-category failure classification and confidence scoring"
+      ]
+    },
+    {
+      "id": "finance-planner",
+      "title": "AI Personal Finance Planner",
+      "shortTitle": "Goal-Aware Planning",
+      "description": "Multi-agent financial planning prototype with data collection, investment planning and goal-based recommendations.",
+      "objective": "Explore how specialized AI agents can provide structured budgeting and goal-planning assistance.",
+      "tags": [
+        "Python",
+        "LangChain",
+        "LangGraph",
+        "GPT-4.1",
+        "RAG",
+        "React",
+        "TypeScript"
+      ],
+      "highlights": [
+        "Three specialized agents",
+        "Goals, income, expenses and risk preferences",
+        "Savings strategies and projected scenarios"
+      ],
+      "disclaimer": "Educational planning demonstration, not regulated financial advice."
+    },
+    {
+      "id": "sla-credit-recovery",
+      "title": "Agentic AI–Powered SLA Breach & Credit Recovery",
+      "shortTitle": "SLA Intelligence",
+      "description": "Contract intelligence and workflow automation for extracting SLA obligations, assessing potential breaches, preparing service-credit claims, and tracking approvals.",
+      "objective": "Support auditable contract-based recovery workflows.",
+      "tags": [
+        "Azure OpenAI",
+        "Python",
+        "Copilot Studio",
+        "REST APIs",
+        "Contract Intelligence"
+      ],
+      "source": "extended resume"
+    },
+    {
+      "id": "smartpdf",
+      "title": "SmartPDF QA Bot",
+      "shortTitle": "Document Intelligence",
+      "description": "Streamlit and LangChain question-answering application using PDF extraction, embeddings, FAISS retrieval and GPT-based answers.",
+      "objective": "Answer questions grounded in uploaded PDF content.",
+      "tags": [
+        "Python",
+        "Streamlit",
+        "LangChain",
+        "FAISS",
+        "Semantic Search"
+      ],
+      "source": "extended resume"
+    }
+  ],
+  "certifications": [
+    "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    "Microsoft Certified: Azure AI Fundamentals (listed in concise resume; verify exact credential)",
+    "UBS NextGen AI – Agents in Action Certificate of Achievement",
+    "Generative AI for Everyone / AI for Everyone (verify exact certificate title)",
+    "GitHub Copilot learning certificates",
+    "GitLab CI Fundamentals (extended resume)",
+    "Agile Fundamentals (extended resume)"
+  ],
+  "growthAreas": [
+    "Advanced Agentic AI and AI system architecture",
+    "AI evaluation, reliability and production operations",
+    "Clear technical communication and storytelling"
+  ],
+  "suggestedMisconception": "Because I take time to understand a problem before responding, I may appear reserved at first. In reality, I value collaboration and contribute more effectively when I have understood the context. This is a proposed answer requiring confirmation, not a verified coworker opinion.",
+  "boundaries": [
+    "Do not invent childhood experiences, family details or personal life events.",
+    "Do not claim unverified coworker opinions, personal failures, conflicts or achievements.",
+    "Treat resume metrics as reported, not independently verified, and confirm individual attribution.",
+    "Avoid publishing private contact details, home address, or sensitive company information.",
+    "Growth areas, weaknesses, misconceptions and behavioral anecdotes require personal confirmation."
+  ],
+  "reviewBeforePublishing": [
+    "Confirm whether UBS employment ended October 2026 or remains current; resumes conflict.",
+    "Confirm exact individual role and measurement of 20+ releases and other project metrics.",
+    "Confirm the coworker misconception answer describes you accurately.",
+    "Confirm growth areas and weakness answers reflect your real self-assessment.",
+    "Check which certifications are completed and their exact names.",
+    "Check that all project details are approved for public sharing.",
+    "Confirm all answers marked requiresConfirmation in questionBank.json."
+  ]
+}
