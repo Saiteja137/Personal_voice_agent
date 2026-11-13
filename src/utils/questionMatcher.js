@@ -28,8 +28,14 @@ const knownSkillAliases = [
   ['postgres', 'PostgreSQL'], ['hugging face', 'Hugging Face'], ['open telemetry', 'OpenTelemetry']
 ]
 
+const technologyDisplayNames = new Map([
+  ['apache kafka', 'Apache Kafka'], ['snowflake', 'Snowflake'], ['aws bedrock', 'AWS Bedrock'],
+  ['databricks', 'Databricks'], ['go', 'Go'], ['golang', 'Go']
+])
+
 const priorityIntents = [
-  { id: 'why_move', patterns: [/\b(?:job change|change (?:my |your )?job|another opportunity|leave (?:my |your )?(?:current )?company|reason for changing|career move)\b/] },
+  { id: 'why_move', patterns: [/\b(?:job change|chang(?:e|ing) (?:my |your )?jobs?|another opportunity|leave (?:my |your )?(?:current )?company|reason for changing|career move)\b/] },
+  { id: 'company_knowledge', patterns: [/\bwhat .* know .* (?:our|the) company\b/, /\bresearch(?:ed)? (?:our|the) (?:company|organization)\b/] },
   { id: 'notice_period', patterns: [/\bnotice period\b/, /\bhow soon .* join\b/, /\bjoining (?:date|availability)\b/] },
   { id: 'how_assistant_built', patterns: [/\b(?:build|built|develop).*(?:assistant|website|voice bot)\b/, /\btechnology stack.*(?:assistant|website|project)\b/, /\barchitecture.*(?:assistant|voice)\b/] },
   { id: 'portfolio_assistant', patterns: [/\b(?:real )?generative ai (?:chatbot|assistant)\b/, /\bpowered by (?:chatgpt|openai|gemini|an? llm)\b/, /\b(?:does|is).*(?:assistant|chatbot).*(?:use|using).*(?:llm|chatgpt)\b/] },
@@ -134,15 +140,6 @@ export function matchQuestion(query, context = {}) {
     return { match, confidence: 0.99, candidates: [{ id: match.id, question: match.question, score: 0.99 }], reason: 'out-of-scope' }
   }
 
-  const skillQuestion = detectSkillQuestion(normalized)
-  if (skillQuestion && !skillQuestion.knownName) {
-    const generic = /\b(?:technology|tool|skill|stack)\b/.test(skillQuestion.requested)
-    const label = generic ? 'that technology' : skillQuestion.requested.replace(/\b\w/g, (letter) => letter.toUpperCase())
-    const answer = `I haven't worked extensively with ${label} yet, so I would not want to overstate my experience. I am comfortable learning new tools by understanding the fundamentals, exploring practical examples, and applying them through hands-on implementation. I would be happy to develop that skill if the role requires it.`
-    const match = dynamicIntent('unknown_skill', answer)
-    return { match, confidence: 0.98, candidates: [{ id: match.id, question: match.question, score: 0.98 }], reason: 'unknown-skill' }
-  }
-
   const priorityId = detectPriorityIntent(normalized)
   if (priorityId) {
     const match = byId.get(priorityId)
@@ -152,6 +149,15 @@ export function matchQuestion(query, context = {}) {
       candidates: [{ id: match.id, question: match.question, score: 0.97 }],
       reason: 'strong-intent'
     }
+  }
+
+  const skillQuestion = detectSkillQuestion(normalized)
+  if (skillQuestion && !skillQuestion.knownName) {
+    const generic = /\b(?:technology|tool|skill|stack)\b/.test(skillQuestion.requested)
+    const label = generic ? 'that technology' : technologyDisplayNames.get(skillQuestion.requested) || skillQuestion.requested.replace(/\b\w/g, (letter) => letter.toUpperCase())
+    const answer = `I haven't worked extensively with ${label} yet, so I would not want to overstate my experience. I am comfortable learning new tools by understanding the fundamentals, exploring practical examples, and applying them through hands-on implementation. I would be happy to develop that skill if the role requires it.`
+    const match = dynamicIntent('unknown_skill', answer)
+    return { match, confidence: 0.98, candidates: [{ id: match.id, question: match.question, score: 0.98 }], reason: 'unknown-skill' }
   }
 
   const fuzzyById = new Map()

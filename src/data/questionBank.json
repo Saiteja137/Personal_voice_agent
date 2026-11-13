@@ -1656,7 +1656,10 @@
     "variations": [
       "Is this assistant using an LLM?",
       "What powers this website?",
-      "Explain this personal assistant"
+      "Explain this personal assistant",
+      "Is this powered by ChatGPT?",
+      "Is this a real generative AI chatbot?",
+      "Does this chatbot call an AI API?"
     ],
     "keywords": [
       "voice assistant",
@@ -1664,7 +1667,7 @@
       "using llm",
       "powers assistant"
     ],
-    "answer": "This is a private, knowledge-based assistant rather than a generative LLM. It normalizes your question, combines keyword intent scoring with Fuse.js fuzzy matching, and selects a reviewed answer from an editable personal question bank. Voice recognition and speech synthesis use browser-native APIs, so no question is sent to a paid AI service.",
+    "answer": "This is a personalized, knowledge-based voice assistant rather than a generative AI chatbot. It combines browser-native speech recognition and synthesis with a structured question bank and intent matching. I chose this architecture to keep the application lightweight, predictable, and accessible without requiring a paid AI service.",
     "requiresConfirmation": false
   },
   {
@@ -2120,7 +2123,10 @@
     "question": "What would you do in your first 90 days?",
     "variations": [
       "How would you onboard to our team?",
-      "What is your 90 day plan?"
+      "What is your 90 day plan?",
+      "What would you focus on after joining?",
+      "How would you approach your first three months?",
+      "What would your onboarding priorities be?"
     ],
     "keywords": [
       "first 90 days",
@@ -2284,14 +2290,17 @@
     "question": "Do you have any questions for us?",
     "variations": [
       "What would you ask the interviewer?",
-      "Any questions for our team?"
+      "Any questions for our team?",
+      "What would you like to ask the recruiter?",
+      "Which questions would you ask the hiring manager?",
+      "What do you want to know about the role?"
     ],
     "keywords": [
       "questions for us",
       "ask recruiter",
       "interviewer questions"
     ],
-    "answer": "Yes. I would love to understand which AI problems are the highest priority for the team, how you evaluate reliability and impact in production, and what success would look like for someone joining this role in the first few months.",
+    "answer": "Yes. I'd like to understand the main AI engineering challenges the team is working on, how success is measured for this role, and what opportunities exist to contribute to Generative AI or Agentic AI projects. I'd also appreciate learning how the team approaches AI evaluation, production reliability, and growth during the first few months.",
     "requiresConfirmation": false
   },
   {

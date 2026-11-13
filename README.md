@@ -118,22 +118,18 @@ Manual browser checks:
 
 These intents are deliberately marked `requiresConfirmation: true`. Until reviewed, the assistant labels the text as a suggestion or declines to invent a fact.
 
-- [ ] `growth_areas` — confirm the three desired growth areas
 - [ ] `biggest_weakness` — confirm or replace the suggested communication weakness
 - [ ] `coworker_misconception` — confirm or replace the suggested interpretation
-- [ ] `leadership_potential` — add only verified leadership examples
 - [ ] `conflict` — add a real conflict or disagreement example
 - [ ] `failure_story` — add a real mistake, response, and lesson
-- [ ] `achievement` — add a verified accomplishment and evidence
-- [ ] `pressure` — confirm the approach or add a real incident
-- [ ] `work_environment` — confirm team and culture preferences
 - [ ] `project_challenge` — add a specific real technical challenge
 - [ ] `favorite_project` — confirm a genuine preference
 - [ ] `contact` — add a public professional contact only if desired
 - [ ] `availability` — add current availability or notice period
-- [ ] `salary` — optionally define a response strategy
 - [ ] `relocation` — confirm location, remote-work, and relocation preferences
 - [ ] `why_move` — confirm the reason for seeking a new opportunity
+- [ ] `notice_period` — confirm the exact notice period and joining date
+- [ ] `manager_description` — replace the suggested manager opinion with verified feedback
 
 Also review any future response involving childhood, family, employers, coworker opinions, production deployment, ownership, leadership, conflict, failure, achievements, financial expectations, or performance metrics.
 

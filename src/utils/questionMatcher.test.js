@@ -54,8 +54,8 @@ describe('question matcher', () => {
     expect(matchQuestion(question).match?.id).toBe(expected)
   })
 
-  it('rejects unrelated questions', () => {
-    expect(matchQuestion('What is the weather in Tokyo tomorrow?').match).toBeNull()
+  it('redirects unrelated questions', () => {
+    expect(matchQuestion('What is the weather in Tokyo tomorrow?').match?.id).toBe('out_of_scope')
   })
 
   it('keeps a specific LangChain question technical', () => {
@@ -95,5 +95,75 @@ describe('question matcher', () => {
     'What is the best option?'
   ])('rejects ambiguous question %s', (question) => {
     expect(matchQuestion(question).match).toBeNull()
+  })
+
+  const hrCases = [
+    ['Why are you changing jobs?', 'why_move'],
+    ['Why are you interested in this position?', 'why_position'],
+    ['What do you know about our company?', 'company_knowledge'],
+    ['Why do you want to work for our company?', 'why_company'],
+    ['What are your expectations from your manager?', 'manager_expectations'],
+    ['How do you handle difficult teammates?', 'difficult_teammates'],
+    ['Are you comfortable working independently?', 'independent_work'],
+    ['How do you manage work-life balance?', 'work_life_balance'],
+    ['What would your manager say about you?', 'manager_description'],
+    ['What is your greatest professional learning?', 'professional_learning'],
+    ['What professional decision are you proud of?', 'proud_decision'],
+    ['How do you stay motivated during repetitive work?', 'repetitive_work'],
+    ['Why are you a good cultural fit?', 'cultural_fit'],
+    ['What kind of projects excite you?', 'exciting_projects'],
+    ['What would make you stay with a company long-term?', 'long_term_company'],
+    ['What does professionalism mean to you?', 'professionalism'],
+    ['What would you do if you disagreed with your manager?', 'disagree_manager'],
+    ['How would you explain AI to a nontechnical person?', 'explain_ai_simple'],
+    ['Why should we trust you with important responsibilities?', 'trust_responsibility'],
+    ['Why did you choose Computer Science?', 'why_computer_science'],
+    ['How do you handle failure?', 'handle_failure'],
+    ['What is your notice period?', 'notice_period']
+  ]
+
+  it.each(hrCases)('matches HR question %s', (question, expected) => {
+    expect(matchQuestion(question).match?.id).toBe(expected)
+  })
+
+  it.each([
+    ['Do you know Apache Kafka?', 'Apache Kafka'],
+    ['Have you worked with Snowflake?', 'Snowflake'],
+    ['Do you have experience with AWS Bedrock?', 'AWS Bedrock'],
+    ['Have you used Databricks?', 'Databricks'],
+    ['Are you familiar with Go?', 'Go']
+  ])('handles unknown skill %s', (question, technology) => {
+    const result = matchQuestion(question)
+    expect(result.match?.id).toBe('unknown_skill')
+    expect(result.match?.answer).toContain(technology)
+  })
+
+  it.each(['Do you know Python?', 'Have you worked with FastAPI?', 'Are you familiar with LangGraph?'])('does not reject verified skill %s', (question) => {
+    expect(matchQuestion(question).match?.id).not.toBe('unknown_skill')
+    expect(matchQuestion(question).match).not.toBeNull()
+  })
+
+  it.each([
+    "What's today's weather?",
+    "Who won yesterday's cricket match?",
+    'Tell me a joke',
+    'What is the latest stock market price?'
+  ])('redirects out-of-scope question %s', (question) => {
+    expect(matchQuestion(question).match?.id).toBe('out_of_scope')
+  })
+
+  it.each([
+    ['How did you build this AI assistant?', 'how_assistant_built'],
+    ['What technologies did you use for this website?', 'how_assistant_built'],
+    ['Is this powered by ChatGPT?', 'portfolio_assistant'],
+    ['Is this a real generative AI chatbot?', 'portfolio_assistant']
+  ])('explains assistant architecture for %s', (question, expected) => {
+    expect(matchQuestion(question).match?.id).toBe(expected)
+  })
+
+  it('keeps intent ids unique and entries complete', () => {
+    const ids = questionBank.map((item) => item.id)
+    expect(new Set(ids).size).toBe(ids.length)
+    expect(questionBank.every((item) => item.question && item.answer && item.variations.length && item.keywords.length)).toBe(true)
   })
 })
